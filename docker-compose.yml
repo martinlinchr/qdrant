@@ -9,7 +9,7 @@ services:
       - "6334:6334"  # gRPC API (optional)
     environment:
       # Optional: Secure your instance with an API key
-      QDRANT__SERVICE__API_KEY: "your-super-secret-api-key"
+      QDRANT__SERVICE__API_KEY:${QDRANT__SERVICE__API_KEY}
       QDRANT__LOG_LEVEL: "INFO"
     volumes:
       # Persistent data storage; change paths as needed
