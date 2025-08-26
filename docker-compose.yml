@@ -5,7 +5,7 @@ services:
     restart: always
     # ports:
       - "6333:6333"  # REST API & dashboard
-    #   - "6334:6334"  # gRPC API (optional)
+      - "6334:6334"  # gRPC API (optional)
     environment:
       # Optional: Secure your instance with an API key
       QDRANT__SERVICE__API_KEY: "${QDRANT__SERVICE__API_KEY}"
